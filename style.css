@@ -1,38 +1,12 @@
-body {
-    transition: background-color 0.3s, color 0.3s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-}
-
-.light-mode {
-    background-color: #fff;
-    color: #000;
-}
-
-.dark-mode {
-    background-color: #333;
-    color: #fff;
-}
-
-.theme-container {
-    display: flex;
-    align-items: center;
-}
-
-#lightbulb {
-    font-size: 48px;
-    margin-right: 20px;
-}
-
-.dark-mode #lightbulb {
-    filter: grayscale(100%);
-}
-
-button {
-    padding: 15px 30px;
-    cursor: pointer;
-    font-size: 18px;
-}
+body{ font: 14px sans-serif; }
+.wrapper{ width: 350px; padding: 20px; margin: auto; }
+.form-group{ margin-bottom: 15px; }
+.form-group label{ display: block; margin-bottom: 5px; }
+.form-group .form-control{ width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; }
+.has-error .form-control{ border-color: #a94442; }
+.help-block{ color: #a94442; }
+.btn{ padding: 10px 15px; border: none; background-color: #337ab7; color: white; border-radius: 4px; cursor: pointer; }
+.btn-primary{ background-color: #337ab7; }
+.btn-default{ background-color: #f0f0f0; color: #333; }
+.btn-danger{ background-color: #d9534f; }
+.page-header h1{ font-size: 36px; }
