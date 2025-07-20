@@ -12,6 +12,22 @@ body {
     color: #fff;
 }
 
+.theme-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+}
+
+#lightbulb {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.dark-mode #lightbulb {
+    filter: grayscale(100%);
+}
+
 button {
     padding: 10px 20px;
     cursor: pointer;
