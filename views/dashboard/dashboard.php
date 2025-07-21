@@ -1,12 +1,3 @@
-<?php
-session_start();
-
-if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
-    header("location: login.php");
-    exit;
-}
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,7 +10,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         <h1>Hi, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>. Welcome to our site.</h1>
     </div>
     <p>
-        <a href="logout.php" class="btn btn-danger">Sign Out of Your Account</a>
+        <a href="index.php?action=logout" class="btn btn-danger">Sign Out of Your Account</a>
     </p>
 </body>
 </html>
